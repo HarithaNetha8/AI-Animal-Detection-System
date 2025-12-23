@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Animal Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>AI-Based Animal Detection</h2>
+    <p>Safety Alert System for Fixed Environments</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="upload-box">
+            <input type="file" name="image" required>
+        </div>
+        <button type="submit">Detect Animal</button>
+    </form>
+
+   {% if alert %}
+    <div class="result alert">
+        ⚠ Animal Detected! <br>
+        Confidence: {{ confidence }} <br><br>
+        🚫 Engine Start Blocked
+    </div>
+
+    <!-- Sound Alert -->
+    <audio autoplay>
+        <source src="/static/uploads/alert.mp3" type="audio/mpeg">
+    </audio>
+{% else %}
+    <div class="result safe">
+        ✔ Safe to Start Vehicle
+    </div>
+{% endif %}
+
+    <div class="footer">
+        AI & Computer Vision project for enhancing safety in fixed parking environments.
+    </div>
+</div>
+
+</body>
+</html>
