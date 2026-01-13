@@ -97,6 +97,11 @@ python app.py
 ```
 http://127.0.0.1:5000/
 ```
+### OUTPUT 
+<img width="1365" height="724" alt="Screenshot 2026-01-13 194655" src="https://github.com/user-attachments/assets/f7bf6841-5dfc-4b28-a0b6-9be540e0a7a9" />
+<img width="1365" height="720" alt="Screenshot 2026-01-13 194619" src="https://github.com/user-attachments/assets/7a5e0d85-8e70-47ba-9ef4-3ae69915e5bf" />
+<img width="1338" height="655" alt="Screenshot 2026-01-13 194538" src="https://github.com/user-attachments/assets/6c46a9c0-7a99-4541-9e47-1448a1ee77e3" />
+
 
 ---
 
